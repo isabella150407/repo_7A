@@ -1,18 +1,29 @@
+import java.util.Scanner;
+
 public class EvaluacionAlumno {
     public static void main(String[] args) {
-        // Definimos las notas
-        double nota1 = 8.5;
-        double nota2 = 6.0;
-        double nota3 = 7.5;
+        Scanner scanner = new Scanner(System.in);
 
-        // Calculamos el promedio
+        // Ingreso de notas
+        System.out.print("Ingrese la primera nota: ");
+        double nota1 = scanner.nextDouble();
+
+        System.out.print("Ingrese la segunda nota: ");
+        double nota2 = scanner.nextDouble();
+
+        System.out.print("Ingrese la tercera nota: ");
+        double nota3 = scanner.nextDouble();
+
+        // Cálculo del promedio
         double promedio = (nota1 + nota2 + nota3) / 3;
 
-        // Mostramos si está Aprobado o Reprobado usando un único if
-        if (promedio >= 7) {
-            System.out.println("Aprobado");
-        } else {
-            System.out.println("Reprobado");
-        }
+        // Evaluación con un único if
+        if (promedio >= 7)
+            System.out.println("Aprobado con promedio: " + promedio);
+        else
+            System.out.println("Reprobado con promedio: " + promedio);
+
+        scanner.close();
     }
 }
+
