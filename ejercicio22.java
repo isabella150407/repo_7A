@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class SueldoEmpleadoAleatorio {
+public class ejercicio22 {
     public static void main(String[] args) {
         Random random = new Random();
 
