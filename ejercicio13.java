@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DiasDelMesSwitch {
+public class ejercicio13 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
