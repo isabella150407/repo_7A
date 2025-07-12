@@ -5,7 +5,7 @@ public class ejercicio15 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingrese la clase del auto (a, b o c): ");
-        char clase = scanner.next().toLowerCase().charAt(0); // Acepta mayúsculas o minúsculas
+        char clase = scanner.next().toLowerCase().charAt(0);
 
         switch (clase) {
             case 'a':
