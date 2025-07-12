@@ -13,7 +13,7 @@ public class ejercicio18 {
             for (int j = 1; j <= 10; j++) {
                 System.out.println(i + " x " + j + " = " + (i * j));
             }
-            System.out.println(); // línea en blanco entre tablas
+            System.out.println(); 
         }
 
         scanner.close();
