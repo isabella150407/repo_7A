@@ -4,7 +4,6 @@ public class ejercicio21{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Entrada de datos
         System.out.print("Ingrese la categoría del empleado (A, B o C): ");
         char categoria = Character.toUpperCase(scanner.next().charAt(0));
 
@@ -14,7 +13,6 @@ public class ejercicio21{
         System.out.print("Ingrese el sueldo bruto: ");
         double sueldoBruto = scanner.nextDouble();
 
-        // Calcular aumento según antigüedad
         double aumento = 0;
         if (antiguedad >= 1 && antiguedad <= 5) {
             aumento = 0.05 * sueldoBruto;
@@ -24,7 +22,6 @@ public class ejercicio21{
             aumento = 0.30 * sueldoBruto;
         }
 
-        // Calcular plus por categoría
         double plus = 0;
         switch (categoria) {
             case 'A':
@@ -42,7 +39,6 @@ public class ejercicio21{
                 return;
         }
 
-        // Calcular sueldo neto
         double sueldoNeto = sueldoBruto + aumento + plus;
 
         // Mostrar resultado
