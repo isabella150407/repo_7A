@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class EvaluacionSinIf {
+public class ejercicios17b{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
