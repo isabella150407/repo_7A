@@ -5,7 +5,7 @@ public class ejercicio4 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingrese una categoría (a, b o c): ");
-        char categoria = scanner.nextLine().toLowerCase().charAt(0); // lee el primer caracter en minúscula
+        char categoria = scanner.nextLine().toLowerCase().charAt(0); 
 
         switch (categoria) {
             case 'a':
