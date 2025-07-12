@@ -4,11 +4,10 @@ public class ejercicio3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitar el nombre del mes
-        System.out.print("Ingrese el nombre de un mes: ");
-        String mes = scanner.nextLine().toLowerCase();  // Convertimos a minúsculas para facilitar la comparación
 
-        // Determinar la cantidad de días
+        System.out.print("Ingrese el nombre de un mes: ");
+        String mes = scanner.nextLine().toLowerCase(); 
+
         String resultado;
 
         if (mes.equals("abril") || mes.equals("junio") || mes.equals("septiembre") || mes.equals("noviembre")) {
@@ -22,13 +21,11 @@ public class ejercicio3 {
             resultado = "Mes no válido.";
         }
 
-        // Mostrar resultado
         System.out.println(resultado);
 
         scanner.close();
     }
 
-    // Método auxiliar para capitalizar el primer carácter del mes
     public static String capitalizar(String texto) {
         if (texto.length() == 0) return texto;
         return texto.substring(0,1).toUpperCase() + texto.substring(1);
