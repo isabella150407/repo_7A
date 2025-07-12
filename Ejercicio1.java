@@ -4,7 +4,6 @@ public class Ejercicio1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Ingreso de notas
         System.out.print("Ingrese la primera nota: ");
         double nota1 = scanner.nextDouble();
 
@@ -14,10 +13,8 @@ public class Ejercicio1 {
         System.out.print("Ingrese la tercera nota: ");
         double nota3 = scanner.nextDouble();
 
-        // Cálculo del promedio
         double promedio = (nota1 + nota2 + nota3) / 3;
 
-        // Evaluación con un único if
         if (promedio >= 7)
             System.out.println("Aprobado con promedio: " + promedio);
         else
