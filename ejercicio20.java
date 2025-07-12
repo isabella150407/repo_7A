@@ -8,7 +8,7 @@ public class ejercicio20 {
         int minimo = Integer.MAX_VALUE;
 
         do {
-            int numero = random.nextInt(100) + 1; // números aleatorios entre 1 y 100
+            int numero = random.nextInt(100) + 1;
             System.out.println("Número " + (contador + 1) + ": " + numero);
 
             if (numero > maximo) {
